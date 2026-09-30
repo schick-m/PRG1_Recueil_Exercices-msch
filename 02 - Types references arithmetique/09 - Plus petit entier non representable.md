@@ -4,7 +4,7 @@ Un `float` code sa mantisse sur 23 bits, plus un bit implicite : 24 chiffres bin
 
 1. Quel est le plus petit entier positif qui n'est pas représentable exactement en `float` ? Raisonnez avec le nombre de chiffres significatifs, puis écrivez l'expression C++ qui le calcule à partir de `numeric_limits<float>::digits` et de `pow`.
 
-> Un float peut représenter jusqu'à 2^24 chiffre, a partir de 2^24 + 1, le système va arrondir.
+> Un float peut représenter jusqu'à 2^24 chiffre, a partir de 2^24 + 1, la variable va déborder.
 
 `cout << static_cast<int>(pow(2, numeric_limits<float>::digits) + 1) << endl;`
 
