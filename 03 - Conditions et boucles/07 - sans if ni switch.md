@@ -10,11 +10,17 @@ if (i < 1) {
 }
 ~~~
 
+~~~cpp
+    // Solution proposée
+    
+    b = (i < 1) or (i > 2);
+~~~
+
 <details>
 <summary>Solution</summary>
 
 ~~~cpp
-b = (i < 1) or (i > 2);
+b = (i < 1) || (i > 2);
 ~~~
 </details>
 
@@ -28,6 +34,12 @@ if (j == 0) {
       b = true;
    }
 }
+~~~
+
+~~~cpp
+    // Solution proposée
+    
+    b = (j == 0) || !(i / j < k);
 ~~~
 
 <details>
@@ -50,6 +62,12 @@ if (j == 0) {
       b = false;
    }
 }
+~~~
+
+~~~cpp
+    // Solution proposée
+    
+    b = (j != 0) && (i / j < k);
 ~~~
 
 <details>

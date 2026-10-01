@@ -12,6 +12,20 @@ switch (a) {
 }
 ~~~
 
+~~~cpp
+// Solution proposée
+
+    if (a == 0){
+        cout << "A";
+    } else if (a == 1){
+        cout << "Z";
+    } else if (a == 2){
+        cout << "a";
+    } else {
+        cout << "b";
+    }
+~~~
+
 <details>
 <summary>Solution</summary>
 
@@ -33,6 +47,15 @@ switch (a) {
    case 0 : cout << "0"; 
    default : cout << "D"; break;
 }
+~~~
+
+~~~cpp
+// Solution proposée
+
+    if (a == 0){
+        cout << "0";
+    }
+    cout << "D";
 ~~~
 
 
@@ -59,6 +82,21 @@ switch (a) {
    case 7 : cout << "4"; break; 
    default : cout << "D"; 
 }
+~~~
+
+~~~cpp
+// Solution proposée
+
+    if (a >= 0 && a <= 5){
+        cout << "A";
+    } else if (a == 6){
+        cout << "3";
+        cout << "4";
+    } else if (a == 7){
+        cout << "4";
+    } else {
+        cout << "b";
+    }
 ~~~
 
 <details>
