@@ -24,6 +24,9 @@ Entrez un nombre réel : 2023.09
 
 Question complémentaire : pourquoi la mantisse en base 2 est-elle toujours comprise entre 1 et 2 (exclu) ? Quel rapport avec le bit implicite du format IEEE 754 ?
 
+
+
+> [Voir mon programme](<08 - Mantisse et exposant.cpp>)
 <details>
 <summary>Solution</summary>
 

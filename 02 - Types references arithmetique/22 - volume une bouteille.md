@@ -23,6 +23,9 @@ Entrez la hauteur du tronc de cone [cm] : 3
 La contenance de la bouteille est de 0.672301 litre.
 ~~~
 
+
+
+> [Voir mon programme](<22 - volume une bouteille.cpp>)
 <details>
 <summary>Solution</summary>
 

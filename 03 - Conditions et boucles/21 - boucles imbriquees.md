@@ -12,6 +12,15 @@ for (int i = 1; i <= 3; ++i) {
 }
 ~~~   
 
+
+
+### Ma reponse
+
+~~~
+****
+****
+****
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -32,6 +41,16 @@ for (int i = 0; i < 4; ++i) {
 }
 ~~~   
 
+
+
+### Ma reponse
+
+~~~
+***
+***
+***
+***
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -53,6 +72,16 @@ for (int i = 1; i <= 4; ++i) {
 }
 ~~~   
 
+
+
+### Ma reponse
+
+~~~
+*
+**
+***
+****
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -78,6 +107,15 @@ for (int i = 1; i <= 3; ++i) {
 }
 ~~~   
 
+
+
+### Ma reponse
+
+~~~
+xoxox
+xoxox
+xoxox
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -101,6 +139,15 @@ for (int i = 1; i <= 3; ++i) {
 }
 ~~~
 
+
+
+### Ma reponse
+
+~~~
+oxoxo
+xoxox
+oxoxo
+~~~
 <details>
 <summary>Solution</summary>
 

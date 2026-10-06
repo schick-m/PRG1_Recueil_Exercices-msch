@@ -31,6 +31,13 @@ int main() {
 
 Conseil : essayer de trouver la réponse "à la main", puis vérifier votre réponse en l'exécutant pas à pas dans un debugger.
 
+
+
+### Ma reponse
+
+~~~
+0/2 3/3 9/3 15/3 20/5 
+~~~
 <details>
 <summary>Solution</summary>
 

@@ -16,6 +16,17 @@ if (a >= 1){
 }
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp 
+if (a >= 1) {
+   a = 42;
+} else { 
+   a *= a;
+} 
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -44,6 +55,19 @@ if (a == 2){
 }
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp 
+if (a == 2) {
+   b = 32;  
+} else if (a < 5) {
+   b = 12;
+} else {
+   b = 23;
+}         
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -80,6 +104,23 @@ if (a < 0){
 }
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp 
+if (a < 0) {
+   if (b < 0) {
+      c = a;
+   } else {
+      c = -a; 
+   }
+} else if (b < 5) {
+   c = a + b;
+} else {  
+   c = a - b;
+}               
+~~~
 <details>
 <summary>Solution</summary>
 

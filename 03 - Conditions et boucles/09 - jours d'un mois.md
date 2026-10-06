@@ -30,6 +30,19 @@ Réalisez ce programme de 3 manières différentes
 - En utilisant `switch`
 - En utilisant ni l'un ni l'autre, mais seulement des opérateurs logiques et / ou l'opérateur ternaire
 
+
+
+### Ma reponse
+
+~~~cpp
+if ( no_mois == 2 ) {
+   cout << "28 ou 29";
+} else if (no_mois == 4 || no_mois == 6 || no_mois == 9 || no_mois == 11) {
+   cout << "30";
+} else {
+   cout << "31";
+} 
+~~~
 <details>
 <summary>Solution if else</summary>
 
@@ -45,6 +58,20 @@ if ( no_mois == 2 ) {
 
 </details>
 
+
+
+### Ma reponse
+
+~~~cpp
+switch (no_mois) {
+   case 2: cout << "28 ou 29"; break;
+   case 4: [[fallthrough]];
+   case 6: [[fallthrough]];
+   case 9: [[fallthrough]];
+   case 11: cout << "30"; break;
+   default: cout << "31"; break;
+}
+~~~
 <details>
 <summary>Solution switch</summary>
 
@@ -61,6 +88,28 @@ switch (no_mois) {
 
 </details>
 
+
+
+### Ma reponse
+
+~~~cpp
+   cout << ( no_mois == 2 ? "28 ou 29" :
+             no_mois == 4 ||
+             no_mois == 6 ||
+             no_mois == 9 ||
+             no_mois == 11 ? "30" : "31"
+           ); 
+}
+~~~
+
+ou
+
+~~~cpp
+   cout << ( no_mois == 2 ? "28 ou 29" :
+             (no_mois <= 6 && no_mois % 2 == 0) || 
+             (no_mois >= 9 && no_mois % 2 != 0) ? "30" : "31"
+           );
+~~~
 <details>
 <summary>Solution opérateurs</summary>
 

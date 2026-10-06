@@ -23,6 +23,17 @@ Que valent les variables x1 à x5 ?
 
 > X5 = 2.0
 
+
+
+### Ma reponse
+
+~~~cpp
+x1 = 2.2;  // division réelle
+x2 = 2.0;  // division entière
+x3 = 2.5;
+x4 = 2.7;  // division réelle
+x5 = 2.0;  // division entière 
+~~~
 <details><summary>Solution</summary>
 
 ~~~cpp

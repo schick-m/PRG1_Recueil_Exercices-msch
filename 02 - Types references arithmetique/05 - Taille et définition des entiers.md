@@ -39,6 +39,9 @@ Testez votre programme avec les types `int`, `unsigned int`,
 `long`, `unsigned long long`, et `char`.
 
 
+
+
+> [Voir mon programme](<05 - Taille et définition des entiers.cpp>)
 <details><summary>Solution</summary>
 
 ~~~cpp

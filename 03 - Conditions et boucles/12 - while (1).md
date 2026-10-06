@@ -21,6 +21,13 @@ while (i - 10) {
 
 > 2 4 6 8 10
 
+
+
+### Ma reponse
+
+~~~
+2 4 6 8 10
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -39,6 +46,15 @@ while (i - 10)
 
 > 10
 
+
+
+### Ma reponse
+
+~~~
+10
+~~~
+
+Noter que cout ne fait pas partie de la boucle
 <details>
 <summary>Solution</summary>
    
@@ -69,6 +85,13 @@ while (i < 11) {
 
 > 2 4 6 8 10 12
 
+
+
+### Ma reponse
+
+~~~
+2 4 6 8 10 12
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -96,6 +119,14 @@ while (i--) {
 |-1|true|-2|-3|
 
 > 10 8 6 4 3 2 0 -2 ...
+
+
+### Ma reponse
+
+~~~
+10 8 6 4 2 0 -2 -4 …
+~~~
+boucle infinie
 <details>
 <summary>Solution</summary>
 
@@ -124,6 +155,13 @@ while (i--) {
 
 > 10 8 6 4 2 0
 
+
+
+### Ma reponse
+
+~~~
+10 8 6 4 2 0
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -149,6 +187,14 @@ while (i++ < 10) {
 ||||||
 
 > 1 1 1 1 1 1 1 1 ...
+
+
+### Ma reponse
+
+~~~
+1 1 1 1 1 1 1 1 .... 
+~~~
+boucle infinie
 <details>
 <summary>Solution</summary>
 
@@ -176,6 +222,13 @@ while (i <= 5) {
 
 > 2 4 6 8 10
 
+
+
+### Ma reponse
+
+~~~
+2 4 6 8 10
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -201,6 +254,13 @@ while (i != 9) {
 
 > 3 5 7 9
 
+
+
+### Ma reponse
+
+~~~
+3 5 7 9
+~~~
 <details>
 <summary>Solution</summary>
 

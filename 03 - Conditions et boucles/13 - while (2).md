@@ -10,6 +10,13 @@ while (i <= 5)
 cout << i;
 ~~~
 
+
+
+### Ma reponse
+
+~~~
+6
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -26,6 +33,13 @@ while (i <= 5)
 cout << i << ' ' << j;
 ~~~
 
+
+
+### Ma reponse
+
+~~~
+6 4
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -43,6 +57,13 @@ while (i <= 5)
 cout << i << ' ' << j;
 ~~~
 
+
+
+### Ma reponse
+
+~~~
+6 3
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -60,6 +81,13 @@ while (j <= 5)
 cout << i << ' ' << j;
 ~~~
 
+
+
+### Ma reponse
+
+~~~
+15 6
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -77,6 +105,13 @@ while (j <= 5)
 cout << i << ' ' << j;
 ~~~
 
+
+
+### Ma reponse
+
+~~~
+21 6
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -93,6 +128,25 @@ while (i <= 5) i += 2; j++;
 cout << i << ' ' << j;
 ~~~
 
+
+
+### Ma reponse
+
+~~~
+6 1
+~~~
+
+Notons que proprement indenté, le code est 
+
+~~~cpp
+int i = 0, j = 0;
+while (i <= 5) 
+   i += 2; 
+j++;
+cout << i << ' ' << j;
+~~~
+
+et `j++;` n'est donc pas dans la boucle
 <details>
 <summary>Solution</summary>
 

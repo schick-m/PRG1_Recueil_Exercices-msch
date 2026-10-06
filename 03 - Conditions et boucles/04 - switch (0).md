@@ -31,6 +31,13 @@ Que va-t-il afficher lorsque l'utilisateur entre comme valeur
 
 > AB
 
+
+
+### Ma reponse
+
+~~~
+AB
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -45,6 +52,13 @@ AB
 
 > B
 
+
+
+### Ma reponse
+
+~~~
+B
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -59,6 +73,13 @@ B
 
 > B
 
+
+
+### Ma reponse
+
+~~~
+B
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -73,6 +94,13 @@ B
 
 > CD
 
+
+
+### Ma reponse
+
+~~~
+CD
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -87,6 +115,13 @@ CD
 
 > D
 
+
+
+### Ma reponse
+
+~~~
+D
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -101,6 +136,13 @@ D
 
 > D
 
+
+
+### Ma reponse
+
+~~~
+D
+~~~
 <details>
 <summary>Solution</summary>
 

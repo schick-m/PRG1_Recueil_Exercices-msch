@@ -10,6 +10,19 @@ long int
 long long int
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp 
+signed char
+short
+int
+long
+long long
+~~~
+
+Le mot clé `signed` est optionnel, sauf pour `char` (`signed char`). Seules garanties : `sizeof(short) <= sizeof(int) <= sizeof(long) <= sizeof(long long)`, `short` et `int` sur au moins 16 bits, `long` au moins 32, `long long` au moins 64.
 <details>
 <summary>Solution</summary>
 
@@ -36,6 +49,17 @@ unsigned long int
 unsigned long long int
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp 
+unsigned char
+unsigned short
+unsigned int
+unsigned long
+unsigned long long
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -54,6 +78,11 @@ unsigned long long
 > int est signé par défaut, indépendamment de la valeur qu'on lui donnes.
 
 
+
+
+### Ma reponse
+
+signé
 <details>
 <summary>Solution</summary>
 signé
@@ -63,6 +92,11 @@ signé
 
 > dépend de l'environnement
 
+
+
+### Ma reponse
+
+Dépend de l'environnement utilisé
 <details>
 <summary>Solution</summary>
 Dépend de l'environnement utilisé

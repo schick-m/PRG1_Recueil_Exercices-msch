@@ -47,6 +47,16 @@ Pour chaque séquence d'instructions suivante, déterminez si elle est correcte 
     ~~~
     - Pas correcte : Il n'est pas permis de modifier la valeur d'une constante après initialisation.
 
+
+
+### Ma reponse
+
+1. `n = 0`
+2. Non, ce n'est pas correct. La variable `n` est déclarée deux fois.
+3. Non, ce n'est pas correct. La variable `k` n'est pas déclarée.
+4. Non, ce n'est pas correct. La variable `n` n'est pas initialisée : son contenu est indéterminé.
+5. `m = 49`
+6. Non, ce n'est pas correct. La variable `nb_produit` est définie `const` et ne peut pas être modifiée (`nb_produit -= 1`).
 <details>
 <summary>Solution</summary>
 

@@ -1,32 +1,4 @@
-# `a*x^2+b*x+c=0`
-
-Complétez le programme suivant qui demande à l'utilisateur les paramètres a, b et c d'une 
-équation du second degré pour qu'il en affiche toutes les solutions réelles s'il y en a.
-
-Prenez soin d'envisager tous les cas possibles pour les paramètres a, b, et c.   
-
-~~~cpp
-#include <iostream>
-#include <cmath>
-using namespace std;
-
-int main() {
-   cout << "Donnez les valeurs de a, b, et c de l'equation a*x^2+b*x+c : ";
-   double a, b, c;
-   cin >> a >> b >> c;
-   
-   // votre code vient ici.
-}
-~~~
-
-
-
-> [Voir mon programme](<11 - equation du second degre.cpp>)
-<details>
-<summary>Solution</summary>
-
-~~~cpp
-#include <iostream>
+﻿#include <iostream>
 #include <cmath>
 using namespace std;
 
@@ -61,5 +33,3 @@ int main() {
       }
    }
 }
-~~~
-</details>

@@ -35,6 +35,9 @@ Entrez la note UNIGE : 7
 Erreur
 ~~~
 
+
+
+> [Voir mon programme](<10 - Note ECTS.cpp>)
 <details>
 <summary>Solution</summary>
 

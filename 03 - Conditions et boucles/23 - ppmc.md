@@ -17,6 +17,9 @@ Donnez 2 nombres entiers positifs : 561 357
 ppmc(561,357) = 3927
 ~~~
 
+
+
+> [Voir mon programme](<23 - ppmc.cpp>)
 <details>
 <summary>Solution 1 - la plus simple</summary>
 
@@ -44,6 +47,9 @@ int main() {
 </details>
 
 
+
+
+> [Voir mon programme](<23 - ppmc.cpp>)
 <details>
 <summary>Solution 2 - un peu plus efficace</summary>
 
@@ -75,6 +81,9 @@ int main() {
 
 
 
+
+
+> [Voir mon programme](<23 - ppmc.cpp>)
 <details>
 <summary>Solution 3 - comme appris à l'école</summary>
 
@@ -116,6 +125,9 @@ int main() {
 </details>
 
 
+
+
+> [Voir mon programme](<23 - ppmc.cpp>)
 <details>
 <summary>Solution 4 - la plus efficace</summary>
 
