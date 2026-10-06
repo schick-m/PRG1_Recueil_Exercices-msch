@@ -10,11 +10,24 @@ if (i < 1) {
 }
 ~~~
 
+~~~cpp
+    // Solution proposée
+    
+    b = (i < 1) or (i > 2);
+~~~
+
+
+
+### Ma reponse
+
+~~~cpp
+b = (i < 1) || (i > 2);
+~~~
 <details>
 <summary>Solution</summary>
 
 ~~~cpp
-b = (i < 1) or (i > 2);
+b = (i < 1) || (i > 2);
 ~~~
 </details>
 
@@ -30,6 +43,20 @@ if (j == 0) {
 }
 ~~~
 
+~~~cpp
+    // Solution proposée
+    
+    b = (j == 0) || !(i / j < k);
+~~~
+
+
+
+### Ma reponse
+
+~~~cpp
+b = (j == 0) or !(i / j < k);
+b = (j == 0) or (i / j >= k);
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -52,6 +79,19 @@ if (j == 0) {
 }
 ~~~
 
+~~~cpp
+    // Solution proposée
+    
+    b = (j != 0) && (i / j < k);
+~~~
+
+
+
+### Ma reponse
+
+~~~cpp
+b = (j != 0) and (i / j < k);
+~~~
 <details>
 <summary>Solution</summary>
 

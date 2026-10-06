@@ -37,6 +37,9 @@ Nombre de rebonds     (n >= 0)         : 10
 La hauteur atteinte apres 10 rebonds : 1.15292 [m]
 ~~~
 
+
+
+> [Voir mon programme](<20 - Balle qui rebondit.cpp>)
 <details>
 <summary>Solution</summary>
 

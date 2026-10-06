@@ -14,6 +14,30 @@ if (a == 1) {
 }        
 ~~~
 
+~~~cpp
+// Solution proposée
+
+    switch (a) {
+        case 1 : cout << "A"; break;
+        case 4 : cout << "C"; break;
+        case 2 : cout << "E"; break;
+        default :  cout << "BA";
+    }
+~~~
+
+
+
+
+### Ma reponse
+
+~~~cpp 
+switch (a) {
+   case 1 : cout << "A"; break;
+   case 4 : cout << "C"; break;
+   case 2 : cout << "E"; break;
+   default : cout << "BA";
+}   
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -38,6 +62,34 @@ if (a < 0 or a >= 5) {
 }  
 ~~~
 
+~~~cpp
+// Solution proposée
+
+    switch (a) {
+        case 0 : 
+        case 1 : 
+        case 2 : cout << "A"; break;
+        case 3 : 
+        case 4 : cout << "B"; break;
+        default :  cout << "D";
+    }
+~~~
+
+
+
+
+### Ma reponse
+
+~~~cpp 
+switch (a) {
+   case 0:
+   case 1:
+   case 2: cout << "A"; break;
+   case 3:
+   case 4: cout << "B"; break;
+   default: cout << "D"; break; 
+}   
+~~~
 <details>
 <summary>Solution</summary>
 

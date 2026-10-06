@@ -9,31 +9,35 @@ Pour chaque séquence d'instructions suivante, déterminez si elle est correcte 
     int n = 1;
     n = 1 - 2 * n;
     n = n + 1;
-   ~~~
-
+   ~~~ 
+   - n = 0
 2.  
     ~~~cpp
     int n = 1;
     n = n + 1;
     int n = 1 - 2 * n;
     ~~~
+   - Pas correcte : Il n'est pas permis de déclarer une variable deux fois.
 3. 
     ~~~cpp
     int n = 1, p = 2;
     n = (n + 1) * (n - k);
     ~~~
+   - Pas correcte : Il n'est pas permis d'utiliser une variable non déclarée.
 4. 
     ~~~cpp
     int n, m = 0;
     n = 2 * n - 1;
     m = n + 1;
     ~~~
+   - Pas correcte : Il n'est pas permis de calculer la valeur d'une variable non initialisée (chiffre aléatoire).
  5. 
     ~~~cpp
     int n = 5, m = 0;
     const int nb_produit = 10;
     m = n * nb_produit - 1;    
     ~~~
+    - m = 49
  6. 
     ~~~cpp
     int n = 5, m = 0;
@@ -41,7 +45,18 @@ Pour chaque séquence d'instructions suivante, déterminez si elle est correcte 
     nb_produit -= 1;
     m = n * nb_produit;
     ~~~
+    - Pas correcte : Il n'est pas permis de modifier la valeur d'une constante après initialisation.
 
+
+
+### Ma reponse
+
+1. `n = 0`
+2. Non, ce n'est pas correct. La variable `n` est déclarée deux fois.
+3. Non, ce n'est pas correct. La variable `k` n'est pas déclarée.
+4. Non, ce n'est pas correct. La variable `n` n'est pas initialisée : son contenu est indéterminé.
+5. `m = 49`
+6. Non, ce n'est pas correct. La variable `nb_produit` est définie `const` et ne peut pas être modifiée (`nb_produit -= 1`).
 <details>
 <summary>Solution</summary>
 

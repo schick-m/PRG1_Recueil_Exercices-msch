@@ -13,15 +13,26 @@ En cas d'erreur, indiquez la raison.\
 
 | # | Expression | Résultat |
 |---| ---------- |---|
-| 1 | `j % i` | |
-| 2 | `n % i`  | |
-| 3 | `y % x`  | |
-| 4 | `y % i` | |
-| 5 | `-j % i` | |
+| 1 | `j % i` |1 |
+| 2 | `n % i`  |0 |
+| 3 | `y % x`  |modulo impossible avec des réels |
+| 4 | `y % i` |modulo impossible avec des réels |
+| 5 | `-j % i` |-1 |
 
 
     
 
+
+
+### Ma reponse
+
+| # | Expression | Résultat |
+|---| ---------- |---|
+| 1 | `j % i` | 1 |
+| 2 | `n % i`  | 0 |
+| 3 | `y % x`  | Erreur, le modulo n'est pas défini pour les réels |
+| 4 | `y % i` | Erreur, le modulo n'est pas défini pour les réels |
+| 5 | `-j % i` | -1 |
 <details>
 <summary>Solution</summary>
 

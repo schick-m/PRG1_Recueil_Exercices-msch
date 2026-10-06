@@ -23,6 +23,9 @@ Hauteur du triangle (h > 0) : 7
 ~~~
 
 
+
+
+> [Voir mon programme](<22 - Triangle d'étoiles.cpp>)
 <details>
 <summary>Solution</summary>
 

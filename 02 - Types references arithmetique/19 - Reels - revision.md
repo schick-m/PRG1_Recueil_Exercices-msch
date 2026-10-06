@@ -22,6 +22,11 @@ cout << numeric_limits<double>::min()  << endl; // 2.22507e-308
 cout << round(floor(-9.8) / ceil(-4.9));
 ~~~
 
+
+
+### Ma reponse
+
+`3`
 <details>
 <summary>Solution</summary>
 
@@ -35,6 +40,12 @@ double x = numeric_limits<double>::max();
 cout << 2 * x / x;
 ~~~
 
+
+
+### Ma reponse
+
+Priorité des opérateurs de gauche à droite<br>
+`2 * x` => débordement => `inf`
 <details>
 <summary>Solution</summary>
 
@@ -45,14 +56,22 @@ Priorité des opérateurs de gauche à droite<br>
 
 ~~~cpp
 // 3
-bool egalite = 1 / 3. == 0.3333333333333333;
-cout << "egalité : " << boolalpha << egalite;
+if (1 / 3. == 0.3333333333333333)
+   cout << "egalité" << endl;
+else
+   cout << "pas d'egalité" << endl;
 ~~~
 
+
+
+### Ma reponse
+
+`pas d'egalité` car en réalité <br>
+`0.33333333333333331483 == 0.3333333333333333`
 <details>
 <summary>Solution</summary>
 
-`egalité : false` car en réalité <br>
+`pas d'egalité` car en réalité <br>
 `0.33333333333333331483 == 0.3333333333333333`
 
 </details>
@@ -61,26 +80,52 @@ cout << "egalité : " << boolalpha << egalite;
 // 4
 // coder ceci correctement de manière à résoudre ce problème correctement pour des double
 
-bool egalite = /* votre réponse */;
-cout << "egalité : " << boolalpha << egalite;
+if ( /* votre réponse */ )
+   cout << "egalité" << endl;
+else
+   cout << "pas d'egalité" << endl;
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+if ( fabs(1 / 3. - 0.3333333333333333) < 1e-9 )
+   cout << "egalité" << endl;
+else
+   cout << "pas d'egalité" << endl;
+~~~
 <details>
 <summary>Solution</summary>
 
 ~~~cpp
-bool egalite = fabs(1 / 3. - 0.3333333333333333) < 1e-9;
-cout << "egalité : " << boolalpha << egalite;
+if ( fabs(1 / 3. - 0.3333333333333333) < 1e-9 )
+   cout << "egalité" << endl;
+else
+   cout << "pas d'egalité" << endl;
 ~~~
 
 </details>
 
 ~~~cpp
 // 5
-bool egalite = static_cast<double>(1 / 3.) == static_cast<float>(1 / 3.);
-cout << "egalité : " << boolalpha << egalite;
+if ( static_cast<double>(1 / 3.) == static_cast<float>(1 / 3.))
+   cout << "egalité" << endl;
+else
+   cout << "pas d'egalité" << endl;
 ~~~
 
+
+
+### Ma reponse
+
+`pas d'egalité`
+
+~~~cpp
+cout << setprecision(20) << static_cast<double>(1 / 3.) << endl; // 0.33333333333333331483
+cout << setprecision(20) << static_cast<float>(1 / 3.)  << endl; // 0.3333333432674407959
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -99,6 +144,11 @@ float reel = 3.14159e42;
 cout << reel << endl;
 ~~~
 
+
+
+### Ma reponse
+
+`inf` en pratique (selon la norme, convertir vers `float` une valeur hors de son domaine est un comportement indéfini ; les processeurs courants donnent +inf)
 <details>
 <summary>Solution</summary>
 
@@ -112,6 +162,17 @@ float reel = 1e7 + 1.01;
 cout << fixed << reel << endl;
 ~~~
 
+
+
+### Ma reponse
+
+`10000001.000000`
+
+le `+ 1.01` n'est pas dans les chiffres significatifs
+
+~~~cpp
+cout << setprecision(10) << fixed << reel << endl; // 10000001.0000000000
+~~~
 <details>
 <summary>Solution</summary>
 

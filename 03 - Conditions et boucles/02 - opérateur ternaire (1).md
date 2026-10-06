@@ -10,6 +10,21 @@ if (a > 0) {
 }
 ~~~
 
+~~~cpp
+// Solution proposée
+
+b = (a > 0) ? b + a : b - 2*a;
+~~~
+
+
+
+### Ma reponse
+
+~~~cpp 
+b += a > 0 ? a : -2*a; 
+// plus propre que 
+b = a > 0 ? b + a : b - 2*a; 
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -29,6 +44,22 @@ if (d == 0.) {
 }
 ~~~
 
+~~~cpp
+// Solution proposée
+
+r = (d == 0.) ? 1e100 : n/d;
+~~~
+
+
+
+### Ma reponse
+
+~~~cpp 
+r = d == 0. ? 1e100 : n/d;
+
+// ou en utilisant le fait que la conversion de double en bool est équivalent à (d != 0)
+r = d ? n / d : 1e100; 
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -52,6 +83,19 @@ if (a > 0) {
 }
 ~~~
 
+~~~cpp
+// Solution proposée
+
+b = (a > 0) ? b + a : (a == 0) ? b = 0 : b * 2;
+~~~
+
+
+
+### Ma reponse
+
+~~~cpp 
+b = a > 0 ? b + 1 : ( a == 0 ? 0 : 2 * b);
+~~~
 <details>
 <summary>Solution</summary>
 

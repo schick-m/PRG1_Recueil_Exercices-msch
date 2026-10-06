@@ -28,6 +28,16 @@ Que va-t-il afficher lorsque l'utilisateur entre comme valeur
 0
 ~~~
 
+
+> AB
+
+
+
+### Ma reponse
+
+~~~
+AB
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -40,6 +50,15 @@ AB
 1
 ~~~
 
+> B
+
+
+
+### Ma reponse
+
+~~~
+B
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -52,6 +71,15 @@ B
 2
 ~~~
 
+> B
+
+
+
+### Ma reponse
+
+~~~
+B
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -64,6 +92,15 @@ B
 4
 ~~~
 
+> CD
+
+
+
+### Ma reponse
+
+~~~
+CD
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -76,6 +113,15 @@ CD
 6
 ~~~
 
+> D
+
+
+
+### Ma reponse
+
+~~~
+D
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -88,6 +134,15 @@ D
 -1
 ~~~
 
+> D
+
+
+
+### Ma reponse
+
+~~~
+D
+~~~
 <details>
 <summary>Solution</summary>
 

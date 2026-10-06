@@ -17,6 +17,13 @@ On suppose que le système utilise le modèle de données LP64.
 cout << static_cast<double>(1 / 3);
 ~~~
 
+
+
+### Ma reponse
+
+`0`
+
+⚠️ La conversion est fait après l'évaluation de l'expression.
 <details>
 <summary>Solution</summary>
 
@@ -31,6 +38,13 @@ cout << static_cast<double>(1 / 3);
 cout << static_cast<double>(1) / 3;
 ~~~
 
+
+
+### Ma reponse
+
+`0.333333`
+
+⚠️ seul le `1` est converti explicitement en `double` ce qui force le `3` à être converti implicitement.
 <details>
 <summary>Solution</summary>
 
@@ -46,6 +60,11 @@ int entier = 1e42;
 cout << entier << endl;
 ~~~
 
+
+
+### Ma reponse
+
+Résultat indéfini : `1e42` est un `double` converti implicitement en `int`, et la valeur n'est pas représentable dans un `int` (voir la slide « Conversion réel vers entier »). On observe par exemple `46681208` ; le compilateur avertit avec `-Wconversion`.
 <details>
 <summary>Solution</summary>
 
@@ -59,6 +78,13 @@ float reel = 1234567890;
 cout << fixed << reel << endl;
 ~~~
 
+
+
+### Ma reponse
+
+`1234567936.000000`
+
+⚠️ `entier` contient trop de chiffres significatifs pour le `float` qui n'en a que 7 ou 9 sur 32 bits.
 <details>
 <summary>Solution</summary>
 
@@ -70,16 +96,25 @@ cout << fixed << reel << endl;
 
 ~~~cpp
 // 5
-bool egalite = static_cast<float>(1234567890) == 1234567890;
-cout << "egalité : " << boolaplpha << egalite;
+if (static_cast<float>(1234567890) == 1234567890)
+   cout << "egalité";
+else
+   cout << "pas d'égalité";
 ~~~
 
+
+
+### Ma reponse
+
+`egalité`
+
+⚠️ même problème que précédement mais pour réaliser le teste d'égalité avec l'opérateur `==`, l'opérande de droite en `int` est convertie en `float`. Ainsi, le problème ne voit pas !!
 <details>
 <summary>Solution</summary>
 
-`egalité : true`
+`egalité`
 
-⚠️ même problème que précédement mais pour réaliser le teste d'égalité avec l'opérateur `==`, l'opérande de droite en `int` est convertie en `float`. Ainsi, le problème ne se voit pas !!
+⚠️ même problème que précédement mais pour réaliser le teste d'égalité avec l'opérateur `==`, l'opérande de droite en `int` est convertie en `float`. Ainsi, le problème ne voit pas !!
 
 </details>
 

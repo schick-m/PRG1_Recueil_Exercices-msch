@@ -10,6 +10,19 @@ for (int i = 0; i < n; ++i) {
 }
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+{ // bloc nécessaire pour limiter le scope de la variable de boucle i 
+   int i = 0;
+   while (i < n) {
+      cout << i << endl;
+      ++i;
+   }
+}
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -32,6 +45,32 @@ for (int i = 0; i < n; ++i) {
 }
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+if (int i = 0; i < n) { // déclaration dans le if pour limiter le scope de la variable de boucle i
+   do {
+      cout << i << endl;
+      ++i; 
+   } while (i < n);
+}
+~~~
+
+ou
+
+~~~cpp
+{ // bloc nécessaire pour limiter le scope de la variable de boucle i
+   int i = 0;
+   if (i < n) { 
+      do {
+         cout << i << endl;
+         ++i; 
+      } while (i < n);
+   }
+}
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -70,6 +109,25 @@ while (i-- > n) {
 }
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+int i = 0; // déclaration hors du for pour ne pas limiter le scope de la variable 
+for (; i-- > n;) {
+    cout << i << endl;
+}
+~~~
+
+ou
+
+~~~cpp
+int i; // déclaration hors du for pour ne pas limiter le scope de la variable 
+for (i = 0; i-- > n;) {
+    cout << i << endl;
+}
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -100,6 +158,18 @@ while (i-- > n) {
 }
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+int i = 0; 
+if (i-- > n) {
+   do {
+      cout << i << endl;
+   } while (i-- > n);
+}
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -125,6 +195,17 @@ do {
 } while (i < n);   
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+int i = 0; 
+cout << i << endl; 
+for (++i; i < n; ++i) {
+    cout << i << endl;
+}
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -147,6 +228,17 @@ do {
 } while (i < n);   
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+int i = 0; 
+cout << i << endl; 
+while (++i, i < n) {
+    cout << i << endl;
+}
+~~~
 <details>
 <summary>Solution</summary>
 

@@ -20,10 +20,25 @@ cout << "4. " << z << endl;
 ~~~
 
 
+~~~cpp
+1. E
+2. F
+3. A
+4. q
+~~~
+
 
 
     
 
+
+
+### Ma reponse
+
+1. E   
+2. F
+3. A
+4. q
 <details>
 <summary>Solution</summary>
 

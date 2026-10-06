@@ -36,6 +36,15 @@ Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droi
 1 * 2 + 3 / 4 * 2
 ~~~
 
+> ((1 * 2) + ((3 / 4) * 2))
+
+
+
+### Ma reponse
+
+~~~cpp 
+((1 * 2) + ((3 / 4) * 2))
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -51,6 +60,15 @@ Les opérateurs `/` et `*` de même priorité étant évalués de gauche à droi
 a + b < c * d + e or f - g + h == i
 ~~~
 
+> (((a + b) < (c * b) + e) or (((f - g) + h) == i))
+
+
+
+### Ma reponse
+
+~~~cpp 
+(((a + b) < ((c * d) + e)) or (((f - g) + h) == i))
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -65,6 +83,15 @@ a + b < c * d + e or f - g + h == i
 a == b < c
 ~~~
 
+> (a == (b < c))
+
+
+
+### Ma reponse
+
+~~~cpp 
+(a == (b < c))
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -80,6 +107,15 @@ a == b < c
 a < b or c == d and e > b
 ~~~
 
+> ((a < b) or ((c == d) and (e > b)))
+
+
+
+### Ma reponse
+
+~~~cpp 
+((a < b) or ((c == d) and (e > b)))
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -95,6 +131,15 @@ a < b or c == d and e > b
 a * b % c + d % e / f - g
 ~~~
 
+> ((((a * b) % c) + ((d % e) / f)) - g)
+
+
+
+### Ma reponse
+
+~~~cpp 
+((((a * b) % c) + ((d % e) / f)) - g)
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -110,6 +155,15 @@ a * b % c + d % e / f - g
 a - b or c == d > e < f and g
 ~~~
 
+> ((a - b) or (c == d > e < f and g))
+
+
+
+### Ma reponse
+
+~~~cpp 
+((a - b) or ((c == ((d > e) < f)) and g))
+~~~
 <details>
 <summary>Solution</summary>
 

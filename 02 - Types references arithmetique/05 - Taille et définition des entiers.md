@@ -15,6 +15,8 @@ using type = unsigned long int;
 
 (cette ligne, donnée, définit `type` comme un autre nom pour `unsigned long int` ; il suffit de la modifier pour tester un autre type.)
 
+> [Voir mon programme](<05 - Taille et définition des entiers.cpp>)
+
 ## Exemples d'exécution
 
 Avec `using type = unsigned int;`
@@ -37,6 +39,9 @@ Testez votre programme avec les types `int`, `unsigned int`,
 `long`, `unsigned long long`, et `char`.
 
 
+
+
+> [Voir mon programme](<05 - Taille et définition des entiers.cpp>)
 <details><summary>Solution</summary>
 
 ~~~cpp

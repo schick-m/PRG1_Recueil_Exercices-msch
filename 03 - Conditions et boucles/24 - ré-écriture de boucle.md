@@ -9,6 +9,16 @@ for (; i < 10; ++i) {
 }
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+while (i < 10) {
+   cout << i << endl;
+   ++i;
+}
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -28,6 +38,18 @@ for (; i < 10; ++i) {
 }
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+if (i < 10) {
+   do {
+      cout << i << endl;
+      ++i; 
+   } while (i < 10);
+}
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -51,6 +73,15 @@ while (i-- > 10) {
 }
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+for (; i-- > 10;) {
+    cout << i << endl;
+}
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -69,6 +100,19 @@ while (i-- > 10) {
 }
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+if (i > 10) {
+   do {
+      --i;
+      cout << i << endl;
+   } while (i > 10);
+}
+--i;   // nécessaire pour que i ait la même valeur en fin de boucle
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -94,6 +138,16 @@ do {
 } while (i < 10);   
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+cout << i << endl; 
+for (++i; i < 10; ++i) {
+    cout << i << endl;
+}
+~~~
 <details>
 <summary>Solution</summary>
 
@@ -114,6 +168,18 @@ do {
 } while (i < 10);   
 ~~~
 
+
+
+### Ma reponse
+
+~~~cpp
+cout << i << endl; 
+++i;
+while (i < 10) {
+    cout << i << endl;
+    ++i; 
+}
+~~~
 <details>
 <summary>Solution</summary>
 

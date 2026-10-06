@@ -33,6 +33,9 @@ Le montant disponible après 1 an est de 1050 CHF
 ~~~
 
 
+
+
+> [Voir mon programme](<17 - accroissement d un avoir bancaire (2).cpp>)
 <details>
 <summary>Solution</summary>
 
