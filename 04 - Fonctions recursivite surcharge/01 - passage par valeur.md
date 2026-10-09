@@ -21,6 +21,12 @@ int main() {
 }
 ~~~
 
+n = 2
+
+n = 6
+
+n = 4
+
 <details>
 <summary>Solution</summary>
 

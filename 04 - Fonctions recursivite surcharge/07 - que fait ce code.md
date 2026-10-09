@@ -23,6 +23,8 @@ void mystere(int& a, int& b) {
 
 ~~~
 
+> la fonction ne peut pas s'appeler elle même
+
 <details>
 <summary>Solution</summary>
 

@@ -6,6 +6,7 @@ const double taux_min = -5.;
 const double taux_max = +50.;
 const int nb_annees_min = 1;
 
+
 int main() {
 
    double montant_initial; // en CHF

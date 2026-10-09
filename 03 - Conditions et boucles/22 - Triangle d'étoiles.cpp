@@ -18,7 +18,8 @@ int main() {
          cout << blanc;
       for (int i = 0; i < 1 + 2 * ligne; ++i)
          cout << etoile;
-      // la suite est optionnelle, mais logique si le caractÃ¨re blanc est visible
+      
+
       for (int i = 0; i < hauteur - ligne - 1; ++i)
          cout << blanc;
       cout << endl;

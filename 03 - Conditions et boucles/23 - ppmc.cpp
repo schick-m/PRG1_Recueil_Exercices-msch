@@ -14,6 +14,5 @@ int main() {
    while (ppmc % n != 0)
       ppmc += m;
 
-   // Affichage du rÃ©sultat
    cout << "ppmc(" << n << "," << m << ") = " << ppmc << endl;
 }
