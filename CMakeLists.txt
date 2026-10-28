@@ -32,8 +32,13 @@ add_executable(PRG1_Recueil_Exercices_msch
 add_executable(correction_erreurs
         "04 - Fonctions recursivite surcharge/06 - correction erreurs.cpp")
 
+add_executable(retrait_argent
+        "04 - Fonctions recursivite surcharge/09 - retrait argent.cpp")
+
 add_executable(permutation_par_reference
         "04 - Fonctions recursivite surcharge/08 - permutation par reference.cpp")
 
 add_executable(volume_pyramide
         "04 - Fonctions recursivite surcharge/03 - volume pyramide.cpp")
+add_executable(operations_arithmetiques "04 - Fonctions recursivite surcharge/10 - operations arithmetiques.cpp")
+add_executable(permutation_par_adresse "04 - Fonctions recursivite surcharge/12 - permutation par adresse.cpp")

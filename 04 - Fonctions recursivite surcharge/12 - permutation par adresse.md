@@ -2,6 +2,12 @@
 
 Reprendre l'exercice [02b-02 - permutation](08%20-%20permutation%20par%20reference.md) mais sans utiliser de référence `double& ref`
 
+
+
+
+
+
+
 <details>
 <summary>Solution</summary>
 

@@ -5,6 +5,8 @@ Le programme ci-dessous contient plusieurs erreurs :
 
 2) En admettant maintenant que les lignes fautives ont été supprimées du programme ci- dessous, déterminer "à la main" ce qu'il va afficher à l'exécution ?
 
+
+
 ~~~cpp
 1  #include <cstdlib>
 2  #include <iostream>
@@ -23,8 +25,8 @@ Le programme ci-dessous contient plusieurs erreurs :
 15    f(C);
 16    f(n);
 17    f(x);
-18    g(C);
-19    g(n);
+18    g(C); // erreur, impossible de demander ecriture sur const
+19    g(n); // erreur, impossible de demander une référence sur un autre type
 20    g(x);
 21    h(C);
 22    h(n);
@@ -44,7 +46,7 @@ Le programme ci-dessous contient plusieurs erreurs :
 36 }
 37 
 38 void h(const double& x) {
-39    x = x + 1;
+39    x = x + 1; // erreur, impossible de faire des operations sur une const
 40    cout << "x = " << x <<endl;
 41 }
 ~~~
