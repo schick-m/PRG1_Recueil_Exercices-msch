@@ -38,6 +38,7 @@ int main() {
    return EXIT_SUCCESS;
 }
 ~~~
+> 3
 
 <details>
 <summary>Indices</summary>

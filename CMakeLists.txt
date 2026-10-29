@@ -42,3 +42,14 @@ add_executable(volume_pyramide
         "04 - Fonctions recursivite surcharge/03 - volume pyramide.cpp")
 add_executable(operations_arithmetiques "04 - Fonctions recursivite surcharge/10 - operations arithmetiques.cpp")
 add_executable(permutation_par_adresse "04 - Fonctions recursivite surcharge/12 - permutation par adresse.cpp")
+
+add_executable(factorielle
+        "04 - Fonctions recursivite surcharge/16 - factorielle.cpp")
+
+add_executable(Fibonacci
+        "04 - Fonctions recursivite surcharge/17 - Fibonacci.cpp")
+
+add_executable(librairie
+        "04 - Fonctions recursivite surcharge/20 - librairie.cpp"
+        "04 - Fonctions recursivite surcharge/annexe.cpp"
+        "04 - Fonctions recursivite surcharge/annexe.h")

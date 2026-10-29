@@ -9,6 +9,7 @@ Les fonctions proposées peuvent-elles être surcharges et utilisées correcteme
 void f(int)      { /* no 1 */ }
 void f(int, int) { /* no 2 */ }
 ~~~
+> Oui
 
 <details>
 <summary>Solution</summary>
@@ -28,7 +29,7 @@ void f(int, int) { /* no 2 */ }
 void f(int)    { /* no 1 */ }
 void f(double) { /* no 2 */ }
 ~~~
-
+>Oui
 <details>
 <summary>Solution</summary>
 
@@ -46,7 +47,7 @@ void f(double) { /* no 2 */ }
 void f(int) { /* no 1 */ }
 int  f(int) { /* no 2 */ }
 ~~~
-
+> Non, le type de retour est possible mais ne départage pas les fonctions
 <details>
 <summary>Solution</summary>
 
@@ -63,6 +64,8 @@ exemple `sin(x);`<br>
 void f(int i=0) { /* no 1 */ }
 void f(int    ) { /* no 2 */ }
 ~~~
+
+> Non
 
 <details>
 <summary>Solution</summary>
@@ -81,6 +84,8 @@ Si le paramètre effectif renseigne le paramètre formel avec valeur pas défaut
 void f(int&) { /* no 1 */ }
 void f(int ) { /* no 2 */ }
 ~~~
+
+> Oui
 
 <details>
 <summary>Solution</summary>
@@ -105,6 +110,8 @@ f(i);    // ambiguité
 void f(const int&) { /* no 1 */ }
 void f(int )       { /* no 2 */ }
 ~~~
+
+> Oui
 
 <details>
 <summary>Solution</summary>
@@ -131,6 +138,8 @@ f(r);    // ambiguité
 void f(int ) { /* no 1 */ }
 void f(int*) { /* no 2 */ }
 ~~~
+
+> Oui
 
 <details>
 <summary>Solution</summary>
@@ -160,6 +169,8 @@ f(ptr2); // aucune fonction compatible
 void f(const int*) { /* no 1 */ }
 void f(      int*) { /* no 2 */ }
 ~~~
+
+> Oui
 
 <details>
 <summary>Solution</summary>
