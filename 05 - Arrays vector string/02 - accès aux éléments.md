@@ -9,6 +9,7 @@ _Il se peut qu'une séquence provoque une erreur à la compilation ou à l'exéc
 array<int, 5> a{1, 2, 3, 4, 5};
 cout << a.front() << ' ' << a.back();
 ~~~
+> 1 5
 <details>
 <summary>Solution</summary>
 
@@ -22,6 +23,7 @@ cout << a.front() << ' ' << a.back();
 array<int, 5> a{1, 2, 3, 4, 5};
 cout << a[1] << ' ' << a[3];
 ~~~
+> 2 4
 <details>
 <summary>Solution</summary>
 
@@ -35,6 +37,7 @@ cout << a[1] << ' ' << a[3];
 array<int, 5> a{1, 2, 3, 4, 5};
 cout << a[5];
 ~~~
+> Comportement indéterminé
 <details>
 <summary>Solution</summary>
 Comportement indéterminé
@@ -45,6 +48,7 @@ Comportement indéterminé
 array<int, 5> a{1, 2, 3, 4, 5};
 cout << a.at(1) << ' ' << a.at(3);
 ~~~
+> 2 4
 <details>
 <summary>Solution</summary>
 
@@ -58,6 +62,7 @@ cout << a.at(1) << ' ' << a.at(3);
 array<int, 5> a{1, 2, 3, 4, 5};
 cout << a.at(5);
 ~~~
+> Erreur à l'exécution
 <details>
 <summary>Solution</summary>
 Erreur à l'exécution :

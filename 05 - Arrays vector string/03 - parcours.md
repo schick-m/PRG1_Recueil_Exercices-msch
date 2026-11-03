@@ -10,6 +10,7 @@ array<int, 5> a{1, 2, 3, 4, 5};
 for(size_t i = 1; i <= 3; ++i)
    cout << a.at(i) << ' ';
 ~~~
+> 2 3 4 
 <details>
 <summary>Solution</summary>
 
@@ -24,6 +25,7 @@ array<int, 5> a{1, 2, 3, 4, 5};
 for(size_t i = a.size()-1; i >= 0; --i)
    cout << a.at(i) << ' ';
 ~~~
+> Erreur à l'exécution, car impossible d'exécuter size_t(-1)
 <details>
 <summary>Solution</summary>
 
@@ -40,6 +42,7 @@ array<int, 5> a{1, 2, 3, 4, 5};
 for(size_t i = 0; i < a.size(); ++i)
    cout << a.at(i) << ' ';
 ~~~
+> 1 2 3 4 5
 <details>
 <summary>Solution</summary>
 
@@ -54,6 +57,7 @@ array<int, 5> a{1, 2, 3, 4, 5};
 for(size_t i = 3; i < a.size(); --i)
    cout << a.at(i) << ' ';
 ~~~
+> 4 3 2 1
 <details>
 <summary>Solution</summary>
 
@@ -68,6 +72,7 @@ array<int, 5> a{1, 2, 3, 4, 5};
 for(size_t i = 3; i > 0; --i)
    cout << a.at(i) << ' ';
 ~~~
+>4 3 2
 <details>
 <summary>Solution</summary>
 
@@ -82,6 +87,7 @@ array<int, 5> a{1, 2, 3, 4, 5};
 for(int i : a)
    cout << i << ' ';
 ~~~
+> 1 2 3 4 5
 <details>
 <summary>Solution</summary>
    
@@ -98,6 +104,7 @@ for(int i : a)
 for(int i : a)
    cout << i << ' '; 
 ~~~
+> 1 2 3 4 5
 <details>
 <summary>Solution</summary>
    
@@ -114,6 +121,7 @@ for(int& i : a)
 for(int i : a)
    cout << i << ' '; 
 ~~~
+> 1 4 9 16 25
 <details>
 <summary>Solution</summary>
    
