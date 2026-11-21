@@ -53,3 +53,5 @@ add_executable(librairie
         "04 - Fonctions recursivite surcharge/20 - librairie.cpp"
         "04 - Fonctions recursivite surcharge/annexe.cpp"
         "04 - Fonctions recursivite surcharge/annexe.h")
+add_executable(calcul_vectoriel "05 - Arrays vector string/06 - Calcul vectoriel.cpp")
+add_executable(medaille_olympiques "05 - Arrays vector string/21 - Médailles olympiques.cpp")
