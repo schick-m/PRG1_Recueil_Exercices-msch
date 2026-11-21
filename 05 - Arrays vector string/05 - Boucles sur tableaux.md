@@ -88,7 +88,7 @@ for (int i = 1; i < 10; i = i + 2) { t[i] = 0; }
 for (auto e: t) cout << e << ' ';
 ~~~
 
-> 
+> 1 0 3 0 5 0 3 0 1 0
 
 <details>
 <summary>Solution</summary>
@@ -105,6 +105,8 @@ for (int i = 0; i < 5; ++i) { t[i + 5] = t[i]; }
 for (auto e: t) cout << e << ' ';
 ~~~
 
+> 1 2 3 4 5 1 2 3 4 5
+
 <details>
 <summary>Solution</summary>
 
@@ -119,6 +121,8 @@ array<int, 10> t{1, 2, 3, 4, 5, 4, 3, 2, 1, 0};
 for (int i = 1; i < 5; ++i) { t[i] = t[9 - i]; }
 for (auto e: t) cout << e << ' ';   
 ~~~
+
+> 1 1 2 3 4 4 3 2 1 0
 
 <details>
 <summary>Solution</summary>

@@ -11,10 +11,12 @@ using namespace std;
 const array<string,7> pays {"Allemagne", "Canada", "Chine", "Coree", "Etats-Unis", "Japon", "Russie"};
 const array<string,3> type_medaille {"Or", "Argent", "Bronze"};
 
+/** @brief Totaliser les médailles d’un pays ; utiliser un array 2D et des alias de types. */
 int total_medaille_pays(const string& pays) {
 
 }
 
+/** @brief Totaliser les médailles d’un type donné (or, argent ou bronze) pour tous les pays. */
 int total_medaille() {
 
 }

@@ -9,6 +9,8 @@ _Il se peut qu'une séquence provoque une erreur à la compilation ou à l'exéc
 vector<int> v(2,3);
 for(auto e : v) cout << e << ' '; 
 ~~~
+
+> 3 3
 <details>
 <summary>Solution</summary>
 
@@ -23,6 +25,7 @@ for(auto e : v) cout << e << ' ';
 vector<int> v(4);
 for(auto e : v) cout << e << ' '; 
 ~~~
+> 0 0 0 0
 <details>
 <summary>Solution</summary>
 
@@ -36,6 +39,7 @@ for(auto e : v) cout << e << ' ';
 vector<int> v{1, 2, 3};
 for (auto e: v) cout << e << ' ';
 ~~~
+> 1 2 3
 <details>
 <summary>Solution</summary>
 
@@ -49,6 +53,7 @@ for (auto e: v) cout << e << ' ';
 vector<int> v{1., 2, 3};
 for (auto e: v) cout << e << ' ';
 ~~~
+> Erreur à la compilation
 <details>
 <summary>Solution</summary>
 Erreur à la compilation. 
@@ -65,6 +70,7 @@ vector<int> v{1., 2, 3};
 vector<double> v{1., 2, 3};
 for (auto e: v) cout << e << ' ';
 ~~~
+> 1 2 3
 <details>
 <summary>Solution</summary>
 
@@ -78,6 +84,7 @@ for (auto e: v) cout << e << ' ';
 vector<int> v(3) = {1, 2, 3};
 for (auto e: v) cout << e << ' ';
 ~~~
+> Erreur à la compilation
 <details>
 <summary>Solution</summary>
 Erreur à la compilation. 
@@ -95,6 +102,7 @@ vector<int> v(3) = {1, 2, 3};
 vector v{1., 2., 3.};
 for (auto e: v) cout << e << ' ';
 ~~~
+> 1 2 3
 <details>
 <summary>Solution</summary> 
 
@@ -111,6 +119,7 @@ v est de type `vector<double>`
 vector v{1., 2, 3};
 for (auto e: v) cout << e << ' ';
 ~~~
+> erreur à la compilation
 <details>
 <summary>Solution</summary> 
 Erreur à la compilation
@@ -128,6 +137,7 @@ vector v{1., 2, 3};
 vector v(3,2.f);
 for (auto e: v) cout << e << ' ';
 ~~~
+> 2 2 2
 <details>
 <summary>Solution</summary> 
 
@@ -144,6 +154,7 @@ v est de type `vector<float>`
 vector v(4);
 for (auto e: v) cout << e << ' ';
 ~~~
+> erreur à la compilation
 <details>
 <summary>Solution</summary> 
 Erreur à la compilation

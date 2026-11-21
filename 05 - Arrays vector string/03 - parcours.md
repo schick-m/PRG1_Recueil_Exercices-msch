@@ -25,7 +25,7 @@ array<int, 5> a{1, 2, 3, 4, 5};
 for(size_t i = a.size()-1; i >= 0; --i)
    cout << a.at(i) << ' ';
 ~~~
-> Erreur à l'exécution, car impossible d'exécuter size_t(-1)
+> 5 4 3 2 1, puis erreur à l'exécution : size_t est non signé, donc après 0, --i donne sa valeur maximale et a.at(i) lève une exception.
 <details>
 <summary>Solution</summary>
 

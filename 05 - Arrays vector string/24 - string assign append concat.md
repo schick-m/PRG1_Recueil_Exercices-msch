@@ -14,6 +14,7 @@ string s2;
 s2.assign(s1, 2, 3);
 cout << '|' << s2 << '|' << endl;
 ~~~
+> |C|
 
 2.
 ~~~cpp
@@ -22,6 +23,7 @@ string s2;
 s2.assign(s1, 3, 2);
 cout << '|' << s2 << '|' << endl;
 ~~~
+>  ||
 
 3.	
 ~~~cpp
@@ -29,6 +31,7 @@ string s;
 s.assign("ABC", 2);
 cout << '|' << s << '|' << endl;
 ~~~
+> |AB|
 
 4.	
 ~~~cpp
@@ -36,6 +39,7 @@ string s;
 s.assign(2, 65);
 cout << '|' << s << '|' << endl;
 ~~~
+> |AA|
 
 5.	
 ~~~cpp
@@ -43,6 +47,7 @@ string s;
 s.assign(4, '\101');
 cout << '|' << s << '|' << endl;
 ~~~
+> |\101|
 
 6.	
 ~~~cpp
