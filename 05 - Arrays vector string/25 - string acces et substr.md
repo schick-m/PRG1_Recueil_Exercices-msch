@@ -9,6 +9,7 @@ _Il se peut qu'une séquence provoque une erreur à la compilation ou à l'exéc
 string s = "ABC";
 cout << '|' << s[1] << '|' << endl;
 ~~~
+> |B|
 
 2.	
 ~~~cpp
@@ -16,6 +17,7 @@ string s1 = "ABC";
 string s2 = s1[1];
 cout << '|' << s2 << '|' << endl;
 ~~~
+> Erreur de compilation
 3.	
 ~~~cpp
 string s1 = "ABC";
@@ -23,75 +25,88 @@ string s2;
 s2 = s1[1];
 cout << '|' << s2 << '|' << endl;
 ~~~
+> |B|
 4.	
 ~~~cpp
 string s = "ABC";
 cout << '|' << s[3] << '|' << endl;
 ~~~
+> `||` visuellement : `s[3]` vaut `'\0'`, un caractère invisible.
 5.	
 ~~~cpp
 string s = "ABC";
 cout << '|' << s[4] << '|' << endl;
 ~~~
+> Comportement indéfini à l’exécution : `s[4]` dépasse la taille de la chaîne.
 6.	
 ~~~cpp
 string s = "ABC";
 cout << '|' << s.at(3) << '|' << endl;
 ~~~
+> out of range
 7.	
 ~~~cpp
 string s;
 cout << s.length() << endl;
 ~~~
+> `0` : `string s;` crée une chaîne vide, donc `s.length()` vaut 0.
 8.	
 ~~~cpp
 string s = "ABC";
 cout << s.length() << endl;
 ~~~
+> 3
 9.	
 ~~~cpp
 string s = "ABC";
 cout << s.size() << endl;
 ~~~
+> 3
 10.	
 ~~~cpp
 string s = "ABC";
 s.resize(5);
 cout << '|' << s << '|' << endl;
 ~~~
+>|ABC|
 11.	
 ~~~cpp
 string s = "ABC";
 s.resize(2, 'x');
 cout << '|' << s << '|' << endl;
 ~~~
+> |AB|
 12.	
 ~~~cpp
 string s = "ABC";
 s.resize(4, 'x');
 cout << '|' << s << '|' << endl;
 ~~~
+> |ABCx|
 13.	
 ~~~cpp
 string s = "ABCDE";
 cout << '|' << s.substr(1, 2) << '|' << endl;
 ~~~
+> |BC|
 14.	
 ~~~cpp
 string s = "ABCDE";
 cout << '|' << s.substr(0, 10) << '|' << endl;
 ~~~
+> |ABCDE|
 15.	
 ~~~cpp
 string s = "ABCDE";
 cout << '|' << s.substr(3) << '|' << endl;
 ~~~
+> |DE|
 16.	
 ~~~cpp
 string s = "ABCDE";
 cout << '|' << s.substr() << '|' << endl;
 ~~~
-
+> |ABCDE|
 
 
 <details>
